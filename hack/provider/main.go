@@ -47,7 +47,7 @@ func main() {
 	if buildVersion == "dev" {
 		replaced = strings.Replace(replaced, "##PROJECT_ROOT##", projectRoot, -1)
 	} else {
-		replaced = strings.Replace(string(content), "##ASSET_REPOSITORY##", assetRepository, -1)
+		replaced = strings.Replace(replaced, "##ASSET_REPOSITORY##", assetRepository, -1)
 	}
 
 	for k, v := range checksumMap {
